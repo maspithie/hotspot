@@ -1,0 +1,7 @@
+<?php
+include_once 'routeros_api.class.php';
+	$user_mikrotik  = "api";
+	$password_mikrotik  = "api";
+	$ip_mikrotik    = "id4.labkom.us:3354";
+	$ip_hotspot = "10.10.8.1";
+?>

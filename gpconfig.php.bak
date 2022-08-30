@@ -1,0 +1,17 @@
+<?php
+session_start();
+include_once 'libraries/google-client/Google_Client.php';
+include_once 'libraries/google-client/contrib/Google_Oauth2Service.php';
+
+$client_id ='230377498918-h1lvapk9086h5ekk1cqmf5ceju7p3dgq.apps.googleusercontent.com'; // Google client ID
+$client_secret = 'muoGJxi4nyLxeT_LfeTf7ele'; // Google Client Secret
+$redirect_url = 'http://hotspot.labkom.xyz/google.php'; // Callback URL
+
+// Call Google API
+$gclient = new Google_Client();
+$gclient->setClientId($client_id); 
+$gclient->setClientSecret($client_secret); 
+$gclient->setRedirectUri($redirect_url); 
+
+$google_oauthv2 = new Google_Oauth2Service($gclient);
+?>
