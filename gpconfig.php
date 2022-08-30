@@ -3,9 +3,9 @@ session_start();
 include_once 'libraries/google-client/Google_Client.php';
 include_once 'libraries/google-client/contrib/Google_Oauth2Service.php';
 
-$client_id ='688607636536-mdb8hq1ht6bmju6p77e2ije7u4m3csv5.apps.googleusercontent.com'; // Google client ID
-$client_secret = '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'; // Google Client Secret
-$redirect_url = 'https://mikrothie.oool.ooo/google.php'; // Callback URL
+$client_id ='688607636536-qcs12g77iu3rqt9sarnvbhegj75vdksq.apps.googleusercontent.com'; // Google client ID
+$client_secret = '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'; // Google Client Secret
+$redirect_url = 'https://github.com/maspithie/hotspot/blob/main/google.php'; // Callback URL
 
 // Call Google API
 $gclient = new Google_Client();
